@@ -1,0 +1,22 @@
+POST http://localhost:8081/books
+Content-Type: application/json
+
+{
+  "title": "Spring Boot",
+  "author": "Craig Walls",
+  "category": "Programming",
+  "quantity": 5
+}
+###
+PUT http://localhost:8081/books/2
+Content-Type: application/json
+
+{
+"title": "Spring Boot Masterclass",
+"author": "Craig Walls",
+"category": "Programming",
+"quantity": 20
+}
+###
+
+DELETE http://localhost:8081/books/2
