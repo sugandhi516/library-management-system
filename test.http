@@ -7,16 +7,42 @@ Content-Type: application/json
   "category": "Programming",
   "quantity": 5
 }
+
 ###
+
 PUT http://localhost:8081/books/2
 Content-Type: application/json
 
 {
-"title": "Spring Boot Masterclass",
-"author": "Craig Walls",
-"category": "Programming",
-"quantity": 20
+  "title": "Spring Boot Masterclass",
+  "author": "Craig Walls",
+  "category": "Programming",
+  "quantity": 20
 }
+
 ###
 
 DELETE http://localhost:8081/books/2
+
+###
+
+GET http://localhost:8081/books/1
+
+###
+
+POST http://localhost:8081/books/issue/1
+
+###
+
+GET http://localhost:8081/books/1
+
+###
+
+POST http://localhost:8081/books/return/1
+
+###
+
+GET http://localhost:8081/books/1
+###
+
+GET http://localhost:8081/books/fine/5
